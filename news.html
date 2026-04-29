@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻资讯 | SenseKernel</title>
+    <meta name="description" content="SenseKernel 新闻资讯页面，完整接入原站新闻索引与详情。">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body data-page="news">
+    <div id="site-header"></div>
+    <main>
+      <section class="page-hero page-hero--compact">
+        <div class="hero-backdrop">
+          <img src="https://sensekernel.com/image/新闻资讯.png" alt="新闻资讯">
+        </div>
+        <div class="shell shell-wide">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow">Mission Dispatches</p>
+            <h1>新闻资讯</h1>
+            <p>完整抓取原站新闻归档，并以更清晰的编辑流样式呈现动态、技术进展与企业里程碑。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="shell">
+          <div class="hero-band" data-reveal>
+            <div class="hero-band-copy">
+              <p class="eyebrow">Archive</p>
+              <h2>动态归档</h2>
+              <p>新版新闻页不再依赖远程接口分页，而是从本地化数据中直接分页渲染，保证改版站点具备独立可交付性。</p>
+            </div>
+            <div class="hero-band-media">
+              <img src="https://sensekernel.com/image/news/20260407225507.jpg" alt="新闻封面">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell">
+          <div id="news-list" class="news-grid"></div>
+          <div id="news-pager" class="pager"></div>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+  </body>
+</html>
